@@ -1,0 +1,164 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fondo negro */
+    color: #FFCC00; /* Texto amarillo */
+}
+
+header {
+    background-color: #FFCC00; /* Fondo amarillo */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+header img {
+    width: 100px; /* Logo más grande */
+    height: auto;
+}
+
+h1 {
+    color: #000000; /* Título negro */
+    font-size: 24px;
+    margin-left: 10px; /* Para separar el título del logo */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FFCC00; /* Títulos en amarillo */
+}
+
+footer {
+    background-color: #FFCC00;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Contenedor de pedidos */
+#pedidos {
+    background-color: #222222;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+}
+
+/* Lista de pedidos */
+#listaPedidos {
+    list-style: none;
+    padding: 0;
+}
+
+/* Cada pedido */
+.pedido {
+    background-color: #333333;
+    color: #FFCC00;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para cada pedido */
+}
+
+/* Lista de detalles de pedido sin viñetas y con puntos alineados */
+.pedido ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pedido ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.pedido ul li::before {
+    content: "•"; /* Punto personalizado */
+    color: #FFCC00; /* Color del punto */
+    font-size: 16px; /* Tamaño del punto */
+    line-height: 1; /* Alineación del punto */
+}
+
+/* Botón general */
+button {
+    background-color: #FFCC00;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Efecto suave en hover */
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Detalles del pedido */
+#detalle {
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 8px;
+    color: #FFCC00;
+}
+
+/* Tabla de detalles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #FFCC00;
+    color: #000000;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #444444;
+}
+
+tr:nth-child(odd) {
+    background-color: #333333;
+}
+
+/* Botón de ver detalles */
+button.detalles {
+    background-color: #e6b800;
+    color: #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease; /* Efecto en hover */
+}
+
+button.detalles:hover {
+    background-color: #cc9a00;
+}
+
+#detalle table {
+    margin-top: 15px;
+}

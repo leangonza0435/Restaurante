@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos del Restaurante</title>
+    <link rel="stylesheet" href="restaurante.css">
+</head>
+<body>
+
+    <!-- Encabezado con el logo y el título -->
+    <header>
+        <img src="hamburgueseria/logo.png" alt="Logo del Restaurante">
+        <h1>Pedidos en Línea</h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main>
+        <h2>Pedidos Recibidos</h2>
+
+        <!-- Contenedor de los pedidos recibidos -->
+        <div id="pedidos">
+            <ul id="listaPedidos">
+                <!-- Aquí se agregarán los pedidos recibidos -->
+            </ul>
+        </div>
+
+        <h2>Pedidos Completados</h2>
+
+        <!-- Contenedor de los pedidos completados -->
+        <div id="pedidosCompletados">
+            <ul id="listaCompletados">
+                <!-- Aquí se agregarán los pedidos completados -->
+            </ul>
+        </div>
+
+        <!-- Detalles del pedido -->
+        <div id="detalle">
+            <h2>Detalles del Pedido</h2>
+            <table id="tablaDetalles">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Tamaño</th>
+                        <th>Bebida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los detalles del pedido se llenarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Tandil Burguer - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Importar Firebase 8 (no modular) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <!-- Importar jsPDF para generar PDFs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="restaurante.js"></script>
+
+</body>
+</html>
